@@ -74,7 +74,7 @@ index 52dd964..0765764 100644
              sitepackages.append(prefix)
              sitepackages.append(os.path.join(prefix, "Lib", "site-packages"))
 diff --git a/Lib/sysconfig/__init__.py b/Lib/sysconfig/__init__.py
-index 47415ad..cd61b26 100644
+index 298256a..a43c932 100644
 --- a/Lib/sysconfig/__init__.py
 +++ b/Lib/sysconfig/__init__.py
 @@ -27,8 +27,8 @@
@@ -215,7 +215,7 @@ index 4dceb5c..f6a07ee 100644
      VENV_LANDMARK = 'pyvenv.cfg'
      ZIP_LANDMARK = f'{platlibdir}/python{VERSION_MAJOR}{VERSION_MINOR}{ABI_THREAD}.zip'
 diff --git a/configure b/configure
-index cff7dfb..dec7bc3 100755
+index ecdd609..214b9a5 100755
 --- a/configure
 +++ b/configure
 @@ -27552,7 +27552,7 @@ if test "$ac_sys_system" = "iOS"; then
@@ -239,7 +239,7 @@ index cff7dfb..dec7bc3 100755
  
  if test x$PLATFORM_TRIPLET = x; then
 diff --git a/configure.ac b/configure.ac
-index ac3269a..171b56b 100644
+index 9863afe..d47e37b 100644
 --- a/configure.ac
 +++ b/configure.ac
 @@ -6615,7 +6615,7 @@ if test "$ac_sys_system" = "iOS"; then
