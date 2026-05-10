@@ -1,11 +1,10 @@
-[![Build Status](https://github.com/deadsnakes/py3.15/actions/workflows/main.yml/badge.svg)](https://github.com/deadsnakes/py3.15/actions/workflows/main.yml)
+[![Build Status](https://github.com/deadsnakes/py3.16/actions/workflows/main.yml/badge.svg)](https://github.com/deadsnakes/py3.16/actions/workflows/main.yml)
 
-py3.15
+py3.16
 ======
 
 [mainline] and [nightly] builds are current supported for:
 
-- jammy
 - noble
 - resolute
 
