@@ -74,7 +74,7 @@ index 239ee0d..669f185 100644
              sitepackages.append(prefix)
              sitepackages.append(os.path.join(prefix, "Lib", "site-packages"))
 diff --git a/Lib/sysconfig/__init__.py b/Lib/sysconfig/__init__.py
-index 298256a..a43c932 100644
+index 719b306..b2dc8f5 100644
 --- a/Lib/sysconfig/__init__.py
 +++ b/Lib/sysconfig/__init__.py
 @@ -27,8 +27,8 @@
@@ -215,10 +215,10 @@ index 4dceb5c..f6a07ee 100644
      VENV_LANDMARK = 'pyvenv.cfg'
      ZIP_LANDMARK = f'{platlibdir}/python{VERSION_MAJOR}{VERSION_MINOR}{ABI_THREAD}.zip'
 diff --git a/configure b/configure
-index 00e3ca2..f7d4e1f 100755
+index 0690e97..aba5a55 100755
 --- a/configure
 +++ b/configure
-@@ -27562,7 +27562,7 @@ if test "$ac_sys_system" = "iOS"; then
+@@ -27568,7 +27568,7 @@ if test "$ac_sys_system" = "iOS"; then
  fi
  
  # Check for --with-platlibdir
@@ -227,7 +227,7 @@ index 00e3ca2..f7d4e1f 100755
  
  PLATLIBDIR="lib"  # XXX: We should probably calculate the defauly from libdir, if defined.
  { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for --with-platlibdir" >&5
-@@ -27594,8 +27594,8 @@ fi
+@@ -27600,8 +27600,8 @@ fi
  
  
  
@@ -239,7 +239,7 @@ index 00e3ca2..f7d4e1f 100755
  
  if test x$PLATFORM_TRIPLET = x; then
 diff --git a/configure.ac b/configure.ac
-index bb2a7ee..e41d08f 100644
+index f2fca52..ec691c7 100644
 --- a/configure.ac
 +++ b/configure.ac
 @@ -6596,7 +6596,7 @@ if test "$ac_sys_system" = "iOS"; then
