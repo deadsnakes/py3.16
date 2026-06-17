@@ -199,12 +199,12 @@ index bcb51ed..4b2f63a 100644
          else:
              # other platforms
 diff --git a/Modules/getpath.py b/Modules/getpath.py
-index 4dceb5c..f6a07ee 100644
+index 6199567..b2c1fb2 100644
 --- a/Modules/getpath.py
 +++ b/Modules/getpath.py
-@@ -179,9 +179,9 @@
+@@ -177,9 +177,9 @@
+ if os_name == 'posix' or os_name == 'darwin':
      BUILDDIR_TXT = 'pybuilddir.txt'
-     BUILD_LANDMARK = 'Modules/Setup.local'
      DEFAULT_PROGRAM_NAME = f'python{VERSION_MAJOR}'
 -    STDLIB_SUBDIR = f'{platlibdir}/python{VERSION_MAJOR}.{VERSION_MINOR}{ABI_THREAD}'
 +    STDLIB_SUBDIR = f'{platlibdir}/python{VERSION_MAJOR}.{VERSION_MINOR}'
@@ -215,10 +215,10 @@ index 4dceb5c..f6a07ee 100644
      VENV_LANDMARK = 'pyvenv.cfg'
      ZIP_LANDMARK = f'{platlibdir}/python{VERSION_MAJOR}{VERSION_MINOR}{ABI_THREAD}.zip'
 diff --git a/configure b/configure
-index 7608a04..0616c65 100755
+index 7408fac..44d683a 100755
 --- a/configure
 +++ b/configure
-@@ -27711,7 +27711,7 @@ if test "$ac_sys_system" = "iOS"; then
+@@ -27715,7 +27715,7 @@ if test "$ac_sys_system" = "iOS"; then
  fi
  
  # Check for --with-platlibdir
@@ -227,7 +227,7 @@ index 7608a04..0616c65 100755
  
  PLATLIBDIR="lib"  # XXX: We should probably calculate the defauly from libdir, if defined.
  { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for --with-platlibdir" >&5
-@@ -27743,8 +27743,8 @@ fi
+@@ -27747,8 +27747,8 @@ fi
  
  
  
@@ -239,10 +239,10 @@ index 7608a04..0616c65 100755
  
  if test x$PLATFORM_TRIPLET = x; then
 diff --git a/configure.ac b/configure.ac
-index 020861b..e87f6a3 100644
+index dbc781b..e20157e 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -6596,7 +6596,7 @@ if test "$ac_sys_system" = "iOS"; then
+@@ -6599,7 +6599,7 @@ if test "$ac_sys_system" = "iOS"; then
  fi
  
  # Check for --with-platlibdir
@@ -251,7 +251,7 @@ index 020861b..e87f6a3 100644
  AC_SUBST([PLATLIBDIR])
  PLATLIBDIR="lib"  # XXX: We should probably calculate the defauly from libdir, if defined.
  AC_MSG_CHECKING([for --with-platlibdir])
-@@ -6622,8 +6622,8 @@ fi],
+@@ -6625,8 +6625,8 @@ fi],
  
  AC_SUBST([LIBDEST])
  AC_SUBST([BINLIBDEST])
