@@ -7,7 +7,7 @@ Subject: relax the required version of autoconf
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/configure.ac b/configure.ac
-index 6e6e505..b0c2c8d 100644
+index 17493e6..21aa46e 100644
 --- a/configure.ac
 +++ b/configure.ac
 @@ -12,7 +12,7 @@ dnl
