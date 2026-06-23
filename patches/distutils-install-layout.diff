@@ -25,7 +25,7 @@ index 1598e98..ea6632b 100644
  
  # -------------------------------------------- HTML documentation generator
 diff --git a/Lib/site.py b/Lib/site.py
-index d06549b..d83c26b 100644
+index 873c562..8478ec7 100644
 --- a/Lib/site.py
 +++ b/Lib/site.py
 @@ -7,12 +7,18 @@
@@ -74,7 +74,7 @@ index d06549b..d83c26b 100644
              sitepackages.append(prefix)
              sitepackages.append(os.path.join(prefix, "Lib", "site-packages"))
 diff --git a/Lib/sysconfig/__init__.py b/Lib/sysconfig/__init__.py
-index 719b306..b2dc8f5 100644
+index fe55f48..4be81e3 100644
 --- a/Lib/sysconfig/__init__.py
 +++ b/Lib/sysconfig/__init__.py
 @@ -27,8 +27,8 @@
@@ -141,7 +141,7 @@ index 719b306..b2dc8f5 100644
              'purelib': '{userbase}/lib/{implementation_lower}{py_version_short}{abi_thread}/site-packages',
              'platlib': '{userbase}/lib/{implementation_lower}{py_version_short}{abi_thread}/site-packages',
              'include': '{userbase}/include/{implementation_lower}{py_version_short}{abi_thread}',
-@@ -288,12 +312,26 @@ def _get_preferred_schemes():
+@@ -290,12 +314,26 @@ def _get_preferred_schemes():
              'home': 'posix_home',
              'user': 'osx_framework_user',
          }
