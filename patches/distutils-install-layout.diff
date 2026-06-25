@@ -13,7 +13,7 @@ Subject: distutils-install-layout
  7 files changed, 83 insertions(+), 28 deletions(-)
 
 diff --git a/Lib/pydoc.py b/Lib/pydoc.py
-index 1598e98..ea6632b 100644
+index f9a870e..b1c97f7 100644
 --- a/Lib/pydoc.py
 +++ b/Lib/pydoc.py
 @@ -554,6 +554,7 @@ def _is_stdlib_module(self, object, basedir=None):
@@ -215,7 +215,7 @@ index 6199567..b2c1fb2 100644
      VENV_LANDMARK = 'pyvenv.cfg'
      ZIP_LANDMARK = f'{platlibdir}/python{VERSION_MAJOR}{VERSION_MINOR}{ABI_THREAD}.zip'
 diff --git a/configure b/configure
-index 12fd0d1..59559e8 100755
+index a978b61..e5832e9 100755
 --- a/configure
 +++ b/configure
 @@ -27717,7 +27717,7 @@ if test "$ac_sys_system" = "iOS"; then
@@ -239,7 +239,7 @@ index 12fd0d1..59559e8 100755
  
  if test x$PLATFORM_TRIPLET = x; then
 diff --git a/configure.ac b/configure.ac
-index 3b42fdf..cfa2403 100644
+index a2729c2..8a398ec 100644
 --- a/configure.ac
 +++ b/configure.ac
 @@ -6603,7 +6603,7 @@ if test "$ac_sys_system" = "iOS"; then
