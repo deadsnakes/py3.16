@@ -215,10 +215,10 @@ index 6199567..b2c1fb2 100644
      VENV_LANDMARK = 'pyvenv.cfg'
      ZIP_LANDMARK = f'{platlibdir}/python{VERSION_MAJOR}{VERSION_MINOR}{ABI_THREAD}.zip'
 diff --git a/configure b/configure
-index 363058c..f3a53b7 100755
+index 17b7ef7..9e48a3e 100755
 --- a/configure
 +++ b/configure
-@@ -27727,7 +27727,7 @@ if test "$ac_sys_system" = "iOS"; then
+@@ -27825,7 +27825,7 @@ if test "$ac_sys_system" = "iOS"; then
  fi
  
  # Check for --with-platlibdir
@@ -227,7 +227,7 @@ index 363058c..f3a53b7 100755
  
  PLATLIBDIR="lib"  # XXX: We should probably calculate the defauly from libdir, if defined.
  { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for --with-platlibdir" >&5
-@@ -27759,8 +27759,8 @@ fi
+@@ -27857,8 +27857,8 @@ fi
  
  
  
@@ -239,10 +239,10 @@ index 363058c..f3a53b7 100755
  
  if test x$PLATFORM_TRIPLET = x; then
 diff --git a/configure.ac b/configure.ac
-index 0a734f9..cd6552a 100644
+index ab64ac8..712661f 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -6600,7 +6600,7 @@ if test "$ac_sys_system" = "iOS"; then
+@@ -6646,7 +6646,7 @@ if test "$ac_sys_system" = "iOS"; then
  fi
  
  # Check for --with-platlibdir
@@ -251,7 +251,7 @@ index 0a734f9..cd6552a 100644
  AC_SUBST([PLATLIBDIR])
  PLATLIBDIR="lib"  # XXX: We should probably calculate the defauly from libdir, if defined.
  AC_MSG_CHECKING([for --with-platlibdir])
-@@ -6626,8 +6626,8 @@ fi],
+@@ -6672,8 +6672,8 @@ fi],
  
  AC_SUBST([LIBDEST])
  AC_SUBST([BINLIBDEST])
