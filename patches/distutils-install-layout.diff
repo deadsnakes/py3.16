@@ -13,7 +13,7 @@ Subject: distutils-install-layout
  7 files changed, 83 insertions(+), 28 deletions(-)
 
 diff --git a/Lib/pydoc.py b/Lib/pydoc.py
-index f9a870e..b1c97f7 100644
+index da07e1e..9c7ab6f 100644
 --- a/Lib/pydoc.py
 +++ b/Lib/pydoc.py
 @@ -554,6 +554,7 @@ def _is_stdlib_module(self, object, basedir=None):
@@ -215,10 +215,10 @@ index 6199567..b2c1fb2 100644
      VENV_LANDMARK = 'pyvenv.cfg'
      ZIP_LANDMARK = f'{platlibdir}/python{VERSION_MAJOR}{VERSION_MINOR}{ABI_THREAD}.zip'
 diff --git a/configure b/configure
-index c849489..37ef072 100755
+index 9061cf9..7f1f454 100755
 --- a/configure
 +++ b/configure
-@@ -27826,7 +27826,7 @@ if test "$ac_sys_system" = "iOS"; then
+@@ -27831,7 +27831,7 @@ if test "$ac_sys_system" = "iOS"; then
  fi
  
  # Check for --with-platlibdir
@@ -227,7 +227,7 @@ index c849489..37ef072 100755
  
  PLATLIBDIR="lib"  # XXX: We should probably calculate the defauly from libdir, if defined.
  { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for --with-platlibdir" >&5
-@@ -27858,8 +27858,8 @@ fi
+@@ -27863,8 +27863,8 @@ fi
  
  
  
@@ -239,7 +239,7 @@ index c849489..37ef072 100755
  
  if test x$PLATFORM_TRIPLET = x; then
 diff --git a/configure.ac b/configure.ac
-index ad82803..269a284 100644
+index 97d2091..faec28d 100644
 --- a/configure.ac
 +++ b/configure.ac
 @@ -6648,7 +6648,7 @@ if test "$ac_sys_system" = "iOS"; then
