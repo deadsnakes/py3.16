@@ -13,10 +13,10 @@ Subject: distutils-install-layout
  7 files changed, 83 insertions(+), 28 deletions(-)
 
 diff --git a/Lib/pydoc.py b/Lib/pydoc.py
-index 8ba2b88..4c5c125 100644
+index 61dadf9..c0fd9d9 100644
 --- a/Lib/pydoc.py
 +++ b/Lib/pydoc.py
-@@ -557,6 +557,7 @@ def _is_stdlib_module(self, object, basedir=None):
+@@ -556,6 +556,7 @@ def _is_stdlib_module(self, object, basedir=None):
                                       'marshal', 'posix', 'signal', 'sys',
                                       '_thread', 'zipimport')
                  or (file.startswith(basedir) and
