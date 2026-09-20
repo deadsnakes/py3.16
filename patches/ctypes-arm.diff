@@ -8,7 +8,7 @@ Subject: ctypes-arm
  1 file changed, 13 insertions(+), 2 deletions(-)
 
 diff --git a/Lib/ctypes/util.py b/Lib/ctypes/util.py
-index 2b01506..d3537f1 100644
+index f4fb05c..a2180d5 100644
 --- a/Lib/ctypes/util.py
 +++ b/Lib/ctypes/util.py
 @@ -353,16 +353,27 @@ def find_library(name, is64 = False):
