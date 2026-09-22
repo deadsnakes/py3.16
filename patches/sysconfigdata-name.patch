@@ -45,10 +45,10 @@ index 15be8b5..194dc0a 100644
  	$(INSTALL_DATA) $(srcdir)/LICENSE $(DESTDIR)$(LIBDEST)/LICENSE.txt
  	@ # If app store compliance has been configured, apply the patch to the
 diff --git a/configure.ac b/configure.ac
-index 6c6c4d6..ebb7076 100644
+index 4257382..1c21a90 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -164,7 +164,7 @@ AC_ARG_WITH([build-python],
+@@ -170,7 +170,7 @@ AC_ARG_WITH([build-python],
      dnl Build Python interpreter is used for regeneration and freezing.
      ac_cv_prog_PYTHON_FOR_REGEN=$with_build_python
      PYTHON_FOR_FREEZE="$with_build_python"
