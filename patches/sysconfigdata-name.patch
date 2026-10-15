@@ -28,10 +28,10 @@ index 639c4dd..634ba52 100644
  
  
 diff --git a/Makefile.pre.in b/Makefile.pre.in
-index afccf1a..6e6b71f 100644
+index ca97bbb..9894bc2 100644
 --- a/Makefile.pre.in
 +++ b/Makefile.pre.in
-@@ -2827,8 +2827,10 @@ libinstall:	all $(srcdir)/Modules/xxmodule.c
+@@ -2825,8 +2825,10 @@ libinstall:	all $(srcdir)/Modules/xxmodule.c
  			esac; \
  		done; \
  	done
@@ -45,7 +45,7 @@ index afccf1a..6e6b71f 100644
  	$(INSTALL_DATA) $(srcdir)/LICENSE $(DESTDIR)$(LIBDEST)/LICENSE.txt
  	@ # If app store compliance has been configured, apply the patch to the
 diff --git a/configure.ac b/configure.ac
-index b0ea995..7e99cb6 100644
+index 9415656..938b1c3 100644
 --- a/configure.ac
 +++ b/configure.ac
 @@ -170,7 +170,7 @@ AC_ARG_WITH([build-python],
