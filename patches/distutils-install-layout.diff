@@ -175,10 +175,10 @@ index 0657e45..aaa3373 100644
  
  def get_preferred_scheme(key):
 diff --git a/Lib/test/test_site.py b/Lib/test/test_site.py
-index fc5e636..2c19bb2 100644
+index 9bc7bc8..a3eacc8 100644
 --- a/Lib/test/test_site.py
 +++ b/Lib/test/test_site.py
-@@ -354,16 +354,16 @@ def test_getsitepackages(self):
+@@ -357,16 +357,16 @@ def test_getsitepackages(self):
          if os.sep == '/':
              # OS X, Linux, FreeBSD, etc
              if sys.platlibdir != "lib":
@@ -215,10 +215,10 @@ index f5f928f..00d426a 100644
      VENV_LANDMARK = 'pyvenv.cfg'
      ZIP_LANDMARK = f'{platlibdir}/python{VERSION_MAJOR}{VERSION_MINOR}{ABI_THREAD}.zip'
 diff --git a/configure b/configure
-index 38fd857..45067b9 100755
+index 04260d2..cf1fbe7 100755
 --- a/configure
 +++ b/configure
-@@ -28848,7 +28848,7 @@ if test "$ac_sys_system" = "iOS" && test "$enable_framework"; then
+@@ -28894,7 +28894,7 @@ if test "$ac_sys_system" = "iOS" && test "$enable_framework"; then
  fi
  
  # Check for --with-platlibdir
@@ -227,7 +227,7 @@ index 38fd857..45067b9 100755
  
  PLATLIBDIR="lib"  # XXX: We should probably calculate the defauly from libdir, if defined.
  { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for --with-platlibdir" >&5
-@@ -28880,8 +28880,8 @@ fi
+@@ -28926,8 +28926,8 @@ fi
  
  
  
@@ -239,10 +239,10 @@ index 38fd857..45067b9 100755
  
  if test x$PLATFORM_TRIPLET = x; then
 diff --git a/configure.ac b/configure.ac
-index 777ced9..a1e2658 100644
+index b532471..c990675 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -6852,7 +6852,7 @@ if test "$ac_sys_system" = "iOS" && test "$enable_framework"; then
+@@ -6879,7 +6879,7 @@ if test "$ac_sys_system" = "iOS" && test "$enable_framework"; then
  fi
  
  # Check for --with-platlibdir
@@ -251,7 +251,7 @@ index 777ced9..a1e2658 100644
  AC_SUBST([PLATLIBDIR])
  PLATLIBDIR="lib"  # XXX: We should probably calculate the defauly from libdir, if defined.
  AC_MSG_CHECKING([for --with-platlibdir])
-@@ -6878,8 +6878,8 @@ fi],
+@@ -6905,8 +6905,8 @@ fi],
  
  AC_SUBST([LIBDEST])
  AC_SUBST([BINLIBDEST])
