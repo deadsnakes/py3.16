@@ -1,3 +1,9 @@
+python3.16 (3.16.0~a1-382-g2468c35c3b-1+noble1) noble; urgency=medium
+
+  * Update to v3.16.0a1-382-g2468c35c3b.
+
+ -- Anthony Sottile (deadsnakes) <asottile+deadsnakes@umich.edu>  Sun, 25 Oct 2026 13:23:45 +0000
+
 python3.16 (3.16.0~a1-361-g94d16d2e13-1+noble1) noble; urgency=medium
 
   * Update to v3.16.0a1-361-g94d16d2e13.
