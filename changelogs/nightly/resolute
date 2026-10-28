@@ -1,3 +1,9 @@
+python3.16 (3.16.0~a1-425-gaf44688631-1+resolute1) resolute; urgency=medium
+
+  * Update to v3.16.0a1-425-gaf44688631.
+
+ -- Anthony Sottile <asottile@umich.edu>  Wed, 28 Oct 2026 19:27:03 +0000
+
 python3.16 (3.16.0~a1-397-gf4043ab1be-1+resolute1) resolute; urgency=medium
 
   * Update to v3.16.0a1-397-gf4043ab1be.

@@ -2,22 +2,22 @@ From: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Date: Thu, 14 Feb 2019 18:59:15 -0800
 Subject: reproducible-buildinfo
 
-# DP: Build getbuildinfo.o with DATE/TIME values when defined
-# DP: Build getbuildinfo.o with DATE/TIME values when defined
 ---
- Makefile.pre.in | 2 ++
- 1 file changed, 2 insertions(+)
+ Makefile.pre.in | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
 
 diff --git a/Makefile.pre.in b/Makefile.pre.in
-index 5198151..25b0995 100644
+index 6875789..8f9f5eb 100644
 --- a/Makefile.pre.in
 +++ b/Makefile.pre.in
-@@ -1911,6 +1911,8 @@ Modules/getbuildinfo.o: $(PARSER_OBJS) \
+@@ -1950,7 +1950,9 @@ Modules/getbuildinfo_bootstrap.o: $(PARSER_OBJS) \
+ GETBUILDINFO_CFLAGS= \
  	      -DGITVERSION="\"`LC_ALL=C $(GITVERSION)`\"" \
  	      -DGITTAG="\"`LC_ALL=C $(GITTAG)`\"" \
- 	      -DGITBRANCH="\"`LC_ALL=C $(GITBRANCH)`\"" \
+-	      -DGITBRANCH="\"`LC_ALL=C $(GITBRANCH)`\""
++	      -DGITBRANCH="\"`LC_ALL=C $(GITBRANCH)`\"" \
 +	      $(if $(BUILD_DATE),-DDATE='"$(BUILD_DATE)"') \
-+	      $(if $(BUILD_TIME),-DTIME='"$(BUILD_TIME)"') \
- 	      -o $@ $(srcdir)/Modules/getbuildinfo.c
++	      $(if $(BUILD_TIME),-DTIME='"$(BUILD_TIME)"')
  
  Modules/getpath.o: $(srcdir)/Modules/getpath.c Python/frozen_modules/getpath.h Makefile $(PYTHON_HEADERS)
+ 	$(CC) -c $(PY_CORE_CFLAGS) -DPYTHONPATH='"$(PYTHONPATH)"' \
