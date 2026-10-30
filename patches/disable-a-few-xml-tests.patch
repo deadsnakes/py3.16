@@ -9,10 +9,10 @@ only needed on jammy and older
  2 files changed, 4 insertions(+)
 
 diff --git a/Lib/test/test_sax.py b/Lib/test/test_sax.py
-index 14e5306..d0d58bd 100644
+index b1cbbce..a8edc99 100644
 --- a/Lib/test/test_sax.py
 +++ b/Lib/test/test_sax.py
-@@ -1257,6 +1257,7 @@ def test_flush_reparse_deferral_enabled(self):
+@@ -1258,6 +1258,7 @@ def test_flush_reparse_deferral_enabled(self):
  
          self.assertEqual(result.getvalue(), start + b"<doc></doc>")
  
@@ -21,7 +21,7 @@ index 14e5306..d0d58bd 100644
          result = BytesIO()
          xmlgen = XMLGenerator(result)
 diff --git a/Lib/test/test_xml_etree.py b/Lib/test/test_xml_etree.py
-index 899947c..1700bb9 100644
+index f0cf7df..0ef4850 100644
 --- a/Lib/test/test_xml_etree.py
 +++ b/Lib/test/test_xml_etree.py
 @@ -2008,9 +2008,11 @@ def test_simple_xml(self, chunk_size=None, flush=False):
