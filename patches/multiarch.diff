@@ -25,10 +25,10 @@ index 64aae90..dd89daa 100644
      srcdir = _CONFIG_VARS.get('srcdir', _PROJECT_BASE)
      if os.name == 'posix':
 diff --git a/Makefile.pre.in b/Makefile.pre.in
-index 3955afa..9b4e31a 100644
+index 1d109da..21ae7c2 100644
 --- a/Makefile.pre.in
 +++ b/Makefile.pre.in
-@@ -1994,6 +1994,7 @@ Python/interpconfig.o: $(srcdir)/Python/interpconfig.c $(srcdir)/Python/config_c
+@@ -1995,6 +1995,7 @@ Python/interpconfig.o: $(srcdir)/Python/interpconfig.c $(srcdir)/Python/config_c
  
  Python/dynload_shlib.o: $(srcdir)/Python/dynload_shlib.c Makefile
  	$(CC) -c $(PY_CORE_CFLAGS) \
