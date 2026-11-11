@@ -480,10 +480,10 @@ define __post_configure
 	cd $(1) && \
 	  ../Modules/makesetup -c ../Modules/config.c.in -s Modules \
 	    Modules/Setup.local Modules/Setup.stdlib -b Modules/Setup.bootstrap ../Modules/Setup
-	mv $(1)/config.c $(1)/Modules/
+	mv $(1)/config.c $(1)/config_bootstrap.c $(1)/Modules/
 
 	: # and fix the timestamps
-	$(MAKE) -C $(1) Makefile Modules/config.c
+	$(MAKE) -C $(1) Makefile Modules/config.c Modules/config_bootstrap.c
 endef
 
 TEST_DIR := $(shell [ -f debian/testdir ] || mktemp -d > debian/testdir; cat debian/testdir)
