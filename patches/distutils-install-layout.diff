@@ -215,10 +215,10 @@ index 2ffb1d9..2ab66fc 100644
      VENV_LANDMARK = 'pyvenv.cfg'
      ZIP_LANDMARK = f'{platlibdir}/python{VERSION_MAJOR}{VERSION_MINOR}{ABI_THREAD}.zip'
 diff --git a/configure b/configure
-index 65d58fd..043162d 100755
+index e033b02..cae352f 100755
 --- a/configure
 +++ b/configure
-@@ -28810,7 +28810,7 @@ if test "$ac_sys_system" = "iOS" -o "$ac_sys_system" = "tvOS" -o "$ac_sys_system
+@@ -28896,7 +28896,7 @@ if test "$ac_sys_system" = "iOS" -o "$ac_sys_system" = "tvOS" -o "$ac_sys_system
  fi
  
  # Check for --with-platlibdir
@@ -227,7 +227,7 @@ index 65d58fd..043162d 100755
  
  PLATLIBDIR="lib"  # XXX: We should probably calculate the defauly from libdir, if defined.
  { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for --with-platlibdir" >&5
-@@ -28842,8 +28842,8 @@ fi
+@@ -28928,8 +28928,8 @@ fi
  
  
  
@@ -239,10 +239,10 @@ index 65d58fd..043162d 100755
  
  if test x$PLATFORM_TRIPLET = x; then
 diff --git a/configure.ac b/configure.ac
-index a041f01..06b8ef1 100644
+index d654f68..b2ad7ea 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -6995,7 +6995,7 @@ if test "$ac_sys_system" = "iOS" -o "$ac_sys_system" = "tvOS" -o "$ac_sys_system
+@@ -7021,7 +7021,7 @@ if test "$ac_sys_system" = "iOS" -o "$ac_sys_system" = "tvOS" -o "$ac_sys_system
  fi
  
  # Check for --with-platlibdir
@@ -251,7 +251,7 @@ index a041f01..06b8ef1 100644
  AC_SUBST([PLATLIBDIR])
  PLATLIBDIR="lib"  # XXX: We should probably calculate the defauly from libdir, if defined.
  AC_MSG_CHECKING([for --with-platlibdir])
-@@ -7021,8 +7021,8 @@ fi],
+@@ -7047,8 +7047,8 @@ fi],
  
  AC_SUBST([LIBDEST])
  AC_SUBST([BINLIBDEST])
