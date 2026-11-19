@@ -45,7 +45,7 @@ index 5c7ed98..611a5c8 100644
  	$(INSTALL_DATA) $(srcdir)/LICENSE $(DESTDIR)$(LIBDEST)/LICENSE.txt
  	@ # If app store compliance has been configured, apply the patch to the
 diff --git a/configure.ac b/configure.ac
-index 0b49d8c..961a46b 100644
+index 83350ea..9677c62 100644
 --- a/configure.ac
 +++ b/configure.ac
 @@ -170,7 +170,7 @@ AC_ARG_WITH([build-python],
